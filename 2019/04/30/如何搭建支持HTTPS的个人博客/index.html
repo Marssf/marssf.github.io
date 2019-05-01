@@ -20,6 +20,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="google-site-verification" content="zul0MxreiQQg1ceXlXP2QYK0GZn1ZrVL8vujcq95tB0">
 
 <script>
     (function(){
@@ -58,6 +59,48 @@
 
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+
+  
+
+  
+    
+      
+    
+
+    
+  
+
+  
+    
+    
+    <link rel="stylesheet" href="https://fonts.google.com/css?family=Lato:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Roboto Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext">
+  
 
 
 
@@ -92,12 +135,12 @@
     root: '/',
     scheme: 'Mist',
     version: '7.1.0',
-    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":true,"dimmer":true},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: false,
-    fastclick: false,
-    lazyload: false,
+    fancybox: true,
+    fastclick: true,
+    lazyload: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     algolia: {
@@ -127,7 +170,7 @@
 <meta property="og:image" content="https://festopia.me/2019/04/30/如何搭建支持HTTPS的个人博客/dashboard.png">
 <meta property="og:image" content="https://festopia.me/2019/04/30/如何搭建支持HTTPS的个人博客/nds.png">
 <meta property="og:image" content="https://festopia.me/2019/04/30/如何搭建支持HTTPS的个人博客/pages.png">
-<meta property="og:updated_time" content="2019-05-01T07:30:00.403Z">
+<meta property="og:updated_time" content="2019-05-01T13:58:26.599Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="如何搭建支持HTTPS的个人博客">
 <meta name="twitter:description" content="有利于提高生产力的知识应该被自由且有效地分享  真实的情感或者有用经验，值得我们通过文字和代码的方式传达给有需要的人，以减少信息熵增对我们个体不利的影响。如果你也这么觉得，何不一起来搭建一个属于自己博客（向网络世界展示自己的一个窗口），向世界分享你的见解？">
@@ -467,7 +510,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-05-01 17:30:00" itemprop="dateModified" datetime="2019-05-01T17:30:00+10:00">2019-05-01</time>
+                <time title="修改时间：2019-05-01 23:58:26" itemprop="dateModified" datetime="2019-05-01T23:58:26+10:00">2019-05-01</time>
               
             
           </span>
@@ -582,7 +625,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">INFO Deploy done: git</span><br></pre></td></tr></table></figure>
 <p>说明代码已被上传到GitHub repo，并且可以尝试通过<code>userID.github.io</code>进行访问。</p>
 <h2 id="自定义域名"><a href="#自定义域名" class="headerlink" title="自定义域名"></a>自定义域名</h2><p>如前所述，在校高校生可以使用Student Dev Pack在Namecheap中申请到为期一年的免费域名，并且Namecheap也提供免费的DNS解析服务和WhoisGuard服务。在Namecheap中申请成功后，参照以下操作设置指向Github的DNS。</p>
-<h3 id="在Dashboard中打开Advanced-DNS设置列表"><a href="#在Dashboard中打开Advanced-DNS设置列表" class="headerlink" title="在Dashboard中打开Advanced DNS设置列表"></a>在Dashboard中打开Advanced DNS设置列表</h3><p><img src="/2019/04/30/如何搭建支持HTTPS的个人博客/dashboard.png" alt="dashboard"></p>
+<h3 id="在Dashboard中打开Advanced-DNS设置列表"><a href="#在Dashboard中打开Advanced-DNS设置列表" class="headerlink" title="在Dashboard中打开Advanced DNS设置列表"></a>在Dashboard中打开Advanced DNS设置列表</h3><p><img src="/2019/04/30/如何搭建支持HTTPS的个人博客/dashboard.png" alt=" "></p>
 <h3 id="设置DNS"><a href="#设置DNS" class="headerlink" title="设置DNS"></a>设置DNS</h3><p>参照<a href="https://help.github.com/en/articles/troubleshooting-custom-domains#https-errors" target="_blank" rel="noopener">Github Pages帮助文档</a>，在<code>HOST RECORDS</code>设置中填写三条records。</p>
 <ol>
 <li>点击 <code>ADD NEW RECORD</code>, <code>Type</code>为 <code>A Record类型</code>，<code>Host</code> 为<code>@</code>, <code>Value</code>以下四条中的任意一条，点击绿色的✔：<ul>
@@ -595,7 +638,7 @@
 <li>重复以上，添加第二条<code>185.199.1XX.153</code> 。</li>
 <li>第三条record, <code>Type</code>为 <code>CNAME Record</code>，<code>Host</code> 为 <code>www</code>, <code>Value</code> 为已经建好的Github 博客默认地址 <code>userID.github.io.</code>，特别注意的是地址最后需要加一个点，就像这样<code>.io.</code>。</li>
 </ol>
-<img src="/2019/04/30/如何搭建支持HTTPS的个人博客/nds.png" title="[DNS]">
+<img src="/2019/04/30/如何搭建支持HTTPS的个人博客/nds.png">
 <p>至此，自定义域名的DNS已设置完毕，由于DNS解析需要一定的时间后才会生效，<del>现在只要安静的看个番，恰口茶耐心等就可以了</del>。</p>
 <p>回到<code>git bush</code>， <code>cd</code> 到本地博客的目录<code>/source</code> 下创建一个<code>CNAME</code> 文件。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ touch CNAME</span><br></pre></td></tr></table></figure>
@@ -603,7 +646,7 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
 <p>上传到Github后，可在博客所在repo中看到一个<code>CNAME</code>文件，内容为之前输入的自定义域名地址。</p>
 <p>最后在GitHub repo的<code>Setting</code>中，找到GitHub Pages并确认<code>Enforce HTTPS</code>为开启状态，稍等片刻直到你看下图，说明你已经完成了所有的配置，并且可以正常访问带有绿色小锁（https支持）的个人博客。</p>
-<img src="/2019/04/30/如何搭建支持HTTPS的个人博客/pages.png" title="[pages]">
+<img src="/2019/04/30/如何搭建支持HTTPS的个人博客/pages.png">
 <hr>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>至此，使用https支持的个人网站就搭建完成了。在建站的过程中<a href="https://miaia.tt" target="_blank" rel="noopener">Miaia</a>，<a href="http://saili.science/" target="_blank" rel="noopener">Alex LEE</a>，<a href="http://alexyxwang.me/2017/08/24/Hexo-Github-Namecheap-搭建个人博客/" target="_blank" rel="noopener">Alex</a> 的帖子对我帮助很多，虽然与他们并不相识，但我很喜欢这个过程，就像我希望这篇帖子或许能够帮到你一样。</p>
 
@@ -867,11 +910,77 @@
 
           
           
+            <div class="links-of-blogroll motion-element links-of-blogroll-block">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-thumbs-up"></i>
+                Links
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.wolf-xc.cn" title="http://www.wolf-xc.cn" rel="noopener" target="_blank">狼的手账本</a>
+                  </li>
+                
+              </ul>
+              <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("30/04/2019 0:0:0");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="陪伴你度过的 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+            </div>
+          
 
           
             
           
-          
+          <div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("30/04/2019 0:0:0");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="陪伴你度过的 "+daysold+" 天 "+hrsold+" 小时 "+minsold+" 分 "+seconds+" 秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
         </div>
       </div>
@@ -899,6 +1008,8 @@
 
     </div>
   </aside>
+  
+    <div id="sidebar-dimmer"></div>
   
 
 
@@ -1014,12 +1125,18 @@
 
 
 
+  
+
+
+
+  
 
 
 
 
 
 
+  
 
 
 
@@ -1039,10 +1156,19 @@
   <script src="/lib/jquery/index.js?v=2.1.3"></script>
 
   
+  <script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+
+  
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js"></script>
+
+  
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
 
   
