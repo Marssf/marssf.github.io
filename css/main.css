@@ -1,3 +1,14 @@
+code {
+  color: #ff7600;
+  background: #fbf7f8;
+  margin: 2px;
+}
+.highlight,
+pre {
+  margin: 5px 0;
+  padding: 5px;
+  border-radius: 3px;
+}
 /* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15; /* 1 */
@@ -1846,7 +1857,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff10a;
+  background: #ffe816;
 }
 .feed-link,
 .chat {
@@ -2804,4 +2815,22 @@ hr {
 .post-body p a:hover {
   color: #0477ab;
   text-decoration: underline;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f5f9;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #a6e3e9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #71c9ce;
+}
+::selection {
+  background-color: #fff6be;
+  color: #555;
 }
