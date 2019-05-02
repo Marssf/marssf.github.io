@@ -509,8 +509,8 @@ pre,
   margin: 20px 0;
   padding: 0;
   font-size: 14px;
-  color: #ccc;
-  background: #2d2d2d;
+  color: #eaeaea;
+  background: #000;
   line-height: 1.6;
 }
 pre,
@@ -531,7 +531,7 @@ pre {
 }
 pre code {
   padding: 0;
-  color: #ccc;
+  color: #eaeaea;
   background: none;
   text-shadow: none;
 }
@@ -554,7 +554,7 @@ pre code {
 }
 .highlight figcaption {
   font-size: 1em;
-  color: #ccc;
+  color: #eaeaea;
   line-height: 1em;
   margin-bottom: 1em;
   margin: 0em;
@@ -572,23 +572,23 @@ pre code {
 }
 .highlight figcaption a {
   float: right;
-  color: #ccc;
+  color: #eaeaea;
 }
 .highlight figcaption a:hover {
-  border-bottom-color: #ccc;
+  border-bottom-color: #eaeaea;
 }
 .highlight .gutter pre {
   padding-left: 10px;
   padding-right: 10px;
-  color: #999;
+  color: #666;
   text-align: right;
-  background-color: #1b1b1b;
+  background-color: #292929;
 }
 .highlight .code pre {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: #2d2d2d;
+  background-color: #000;
 }
 .highlight .line {
   height: 20px;
@@ -612,10 +612,10 @@ pre .addition {
   background: #008000;
 }
 pre .meta {
-  color: #c9c;
+  color: #c397d8;
 }
 pre .comment {
-  color: #999;
+  color: #969896;
 }
 pre .variable,
 pre .attribute,
@@ -630,7 +630,7 @@ pre .html .doctype,
 pre .css .id,
 pre .css .class,
 pre .css .pseudo {
-  color: #f2777a;
+  color: #d54e53;
 }
 pre .number,
 pre .preprocessor,
@@ -640,7 +640,7 @@ pre .literal,
 pre .params,
 pre .constant,
 pre .command {
-  color: #f99157;
+  color: #e78c45;
 }
 pre .ruby .class .title,
 pre .css .rules .attribute,
@@ -653,11 +653,11 @@ pre .ruby .symbol,
 pre .xml .cdata,
 pre .special,
 pre .formula {
-  color: #9c9;
+  color: #b9ca4a;
 }
 pre .title,
 pre .css .hexcolor {
-  color: #6cc;
+  color: #70c0b1;
 }
 pre .function,
 pre .python .decorator,
@@ -667,11 +667,11 @@ pre .ruby .title .keyword,
 pre .perl .sub,
 pre .javascript .title,
 pre .coffeescript .title {
-  color: #69c;
+  color: #7aa6da;
 }
 pre .keyword,
 pre .javascript .function {
-  color: #c9c;
+  color: #c397d8;
 }
 .posts-expand .post-body img.full-image {
   border: none;
@@ -1226,74 +1226,6 @@ pre .javascript .function {
 }
 .use-motion .menu-item {
   opacity: 0;
-}
-.github-corner :hover .octo-arm {
-  animation: octocat-wave 560ms ease-in-out;
-}
-.github-corner > svg {
-  fill: #222;
-  color: #fff;
-  position: absolute;
-  top: 0;
-  border: 0;
-  right: 0;
-}
-@media (max-width: 991px) {
-  .github-corner .github-corner:hover .octo-arm {
-    animation: none;
-  }
-  .github-corner .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
-}
-@media (max-width: 767px) {
-  .github-corner > svg {
-    top: inherit;
-  }
-}
-@-moz-keyframes octocat-wave {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  20%, 60% {
-    transform: rotate(-25deg);
-  }
-  40%, 80% {
-    transform: rotate(10deg);
-  }
-}
-@-webkit-keyframes octocat-wave {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  20%, 60% {
-    transform: rotate(-25deg);
-  }
-  40%, 80% {
-    transform: rotate(10deg);
-  }
-}
-@-o-keyframes octocat-wave {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  20%, 60% {
-    transform: rotate(-25deg);
-  }
-  40%, 80% {
-    transform: rotate(10deg);
-  }
-}
-@keyframes octocat-wave {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  20%, 60% {
-    transform: rotate(-25deg);
-  }
-  40%, 80% {
-    transform: rotate(10deg);
-  }
 }
 .post-body {
   overflow-wrap: break-word;
@@ -1851,7 +1783,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1ccf;
+  background: #a4decf;
 }
 .feed-link,
 .chat {
@@ -2814,6 +2746,24 @@ hr {
     text-align: center;
   }
 }
+code {
+  margin: 0px 4px;
+}
+.highlight figcaption {
+  margin: 0em;
+  padding: 0.5em;
+  background: #eee;
+  border-bottom: 1px solid #e9e9e9;
+}
+.highlight figcaption a {
+  color: #5073b8;
+}
+pre .addition {
+  background: #e6ffed;
+}
+pre .deletion {
+  background: #ffeef0;
+}
 .github-corner > svg {
   fill: #74b49b;
 }
@@ -2843,8 +2793,7 @@ body {
   background: #f4f9f4;
 }
 ::-webkit-scrollbar-thumb {
-  border-radius: 3px;
-  background-color: #a7d7c5;
+  background-color: #74b49b;
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #74b49b;
@@ -2858,9 +2807,6 @@ body {
 }
 .posts-expand .post-meta {
   margin: 5px 0px 0px 0px;
-}
-.header-inner {
-  height: 3rem;
 }
 .post-button {
   margin-top: 1.875rem;
@@ -2916,7 +2862,6 @@ body {
   text-align: center;
   margin-top: 10px;
   margin-bottom: 0px;
-  float: none;
 }
 .logo-line-before,
 .logo-line-after {
@@ -2928,7 +2873,7 @@ body {
   border-radius: 5px;
 }
 .menu .menu-item {
-  margin: 5px 8px;
+  margin: 5px 12px;
 }
 .menu .menu-item a:hover {
   border-bottom-color: rgba(161,102,171,0);
@@ -2945,7 +2890,6 @@ span.exturl:hover {
   border-bottom-color: #5c8d89;
 }
 .site-meta {
-  float: none;
   margin-left: 0px;
   text-align: center;
 }
@@ -3054,7 +2998,7 @@ h6 {
 .sidebar-toggle {
   right: 10px;
   bottom: 43px;
-  background-color: #309286;
+  background-color: #5c8d89;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
@@ -3120,5 +3064,14 @@ h6 {
   margin-top: 15px;
 }
 .back-to-top {
-  background-color: #309286;
+  background-color: #5c8d89;
+}
+@media (max-width: 767px) {
+  .menu {
+    text-align: center;
+    padding-bottom: 0.6rem;
+  }
+  .site-nav {
+    transform: translateY(20px);
+  }
 }
