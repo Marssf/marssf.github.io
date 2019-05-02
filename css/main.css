@@ -1851,7 +1851,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffffb4;
+  background: #ff1ccf;
 }
 .feed-link,
 .chat {
@@ -2964,7 +2964,7 @@ span.exturl:hover {
   font-weight: 700;
 }
 .posts-expand .post-title-link::before {
-  background-image: linear-gradient(90deg, #a166ab 0%, #ef4e7b 25%, #f37055 50%, #ef4e7b 75%, #a166ab 100%);
+  background-color: #74b49b;
 }
 .posts-expand .post-meta {
   margin: 10px 0px 20px 0px;
