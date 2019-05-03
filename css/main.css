@@ -1783,7 +1783,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #33ff38;
+  background: #ecb537;
 }
 .feed-link,
 .chat {
@@ -2869,11 +2869,11 @@ body {
 }
 .menu .menu-item a {
   font-size: 16px;
-  padding: 0 0.46rem;
+  padding: 0 5px;
   border-radius: 5px;
 }
 .menu .menu-item {
-  margin: 5px 12px;
+  margin: 5px 10px;
 }
 .menu .menu-item a:hover {
   border-bottom-color: rgba(161,102,171,0);
@@ -2906,12 +2906,14 @@ span.exturl:hover {
 .posts-expand .post-title {
   font-size: 26px;
   font-weight: 700;
+  text-align: center;
 }
 .posts-expand .post-title-link::before {
   background-color: #74b49b;
 }
 .posts-expand .post-meta {
   margin: 10px 0px 20px 0px;
+  text-align: center;
 }
 .posts-expand .post-meta .post-description {
   font-style: italic;
