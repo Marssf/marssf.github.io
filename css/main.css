@@ -1783,7 +1783,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ecb537;
+  background: #c222ff;
 }
 .feed-link,
 .chat {
@@ -2804,6 +2804,10 @@ body {
 }
 .header {
   background-color: #f4f9f4;
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: #a7d7c5;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.1);
 }
 .posts-expand .post-meta {
   margin: 5px 0px 0px 0px;
@@ -2954,7 +2958,7 @@ span.exturl:hover {
   line-height: 2;
   background-color: #f4f9f4;
   color: #74b49b;
-  border-top-width: 3px;
+  border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #a7d7c5;
   box-shadow: 0px -5px 5px 0px rgba(0,0,0,0.1);
