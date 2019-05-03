@@ -1783,7 +1783,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cc7883;
+  background: #5dff09;
 }
 .feed-link,
 .chat {
@@ -2754,13 +2754,6 @@ hr {
 }
 .wobbleTransparentLine {
   border-color: rgba(0,0,0,0) !important;
-}
-#sidebar,
-header {
-  z-index: 1 !important;
-}
-.main {
-  padding-bottom: 200px;
 }
 code {
   margin: 0px 4px;
