@@ -1813,7 +1813,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #cfdea2;
+  background: #d2fc7f;
 }
 .feed-link,
 .chat {
@@ -2775,6 +2775,10 @@ hr {
     width: auto;
     text-align: center;
   }
+}
+.local-search-popup #local-search-result {
+  padding: 25px 40px;
+  height: calc(100% - 95px);
 }
 .sidebar {
   box-shadow: none;
