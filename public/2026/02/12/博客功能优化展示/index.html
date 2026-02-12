@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 8.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="manifest" href="/images/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.css" integrity="sha256-gkQVf8UKZgQ0HyuxL/VnacadJ+D2Kox2TCEBuNQg5+w=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"marssf.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12,"b2t":false,"scrollbar":false},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
+
+    <meta name="description" content="展示博客新增的深色模式、阅读时间、目录导航、搜索功能等全面优化，保持原有设计风格的同时提升用户体验。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客功能全面优化升级展示">
+<meta property="og:url" content="https://marssf.github.io/2026/02/12/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96%E5%B1%95%E7%A4%BA/index.html">
+<meta property="og:site_name" content="Festopia">
+<meta property="og:description" content="展示博客新增的深色模式、阅读时间、目录导航、搜索功能等全面优化，保持原有设计风格的同时提升用户体验。">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-12T07:30:00.000Z">
+<meta property="article:modified_time" content="2026-02-12T16:01:11.812Z">
+<meta property="article:author" content="FeXlanS">
+<meta property="article:tag" content="SEO优化">
+<meta property="article:tag" content="功能优化">
+<meta property="article:tag" content="响应式设计">
+<meta property="article:tag" content="用户体验">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://marssf.github.io/2026/02/12/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96%E5%B1%95%E7%A4%BA/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://marssf.github.io/2026/02/12/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96%E5%B1%95%E7%A4%BA/","path":"2026/02/12/博客功能优化展示/","title":"博客功能全面优化升级展示"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>博客功能全面优化升级展示 | Festopia</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancyapps-ui/5.0.31/fancybox/fancybox.umd.js" integrity="sha256-a+H7FYzJv6oU2hfsfDGM2Ohw/cR9v+hPfxHCLdmCrE8=" crossorigin="anonymous" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous" defer></script>
+<script src="/js/utils.js" defer></script><script src="/js/motion.js" defer></script><script src="/js/sidebar.js" defer></script><script src="/js/next-boot.js" defer></script>
+
+  
+
+
+
+  <script src="/js/third-party/fancybox.js" defer></script>
+
+
+
+  
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Festopia</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">此间少年</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="home fa-fw"></i>首页</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="th fa-fw"></i>分类</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="user fa-fw"></i>关于</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link"><span class="nav-number">1.</span> <span class="nav-text">🚀 博客功能全面优化升级</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#dark-mode"><span class="nav-number">1.1.</span> <span class="nav-text">深色模式支持</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#enhancements"><span class="nav-number">1.1.1.</span> <span class="nav-text">智能阅读时间</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#performance"><span class="nav-number">1.2.</span> <span class="nav-text">性能与SEO优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#compatibility"><span class="nav-number">1.3.</span> <span class="nav-text">跨平台兼容性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link"><span class="nav-number">1.4.</span> <span class="nav-text">设计理念与承诺</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">FeXlanS</p>
+  <div class="site-description" itemprop="description">Wir müssen wissen - wir werden wissen.</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">标签</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://marssf.github.io/2026/02/12/%E5%8D%9A%E5%AE%A2%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96%E5%B1%95%E7%A4%BA/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="FeXlanS">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Festopia">
+      <meta itemprop="description" content="Wir müssen wissen - wir werden wissen.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="博客功能全面优化升级展示 | Festopia">
+      <meta itemprop="description" content="展示博客新增的深色模式、阅读时间、目录导航、搜索功能等全面优化，保持原有设计风格的同时提升用户体验。">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          博客功能全面优化升级展示
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2026-02-12 15:30:00" itemprop="dateCreated datePublished" datetime="2026-02-12T15:30:00+08:00">2026-02-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2026-02-13 00:01:11" itemprop="dateModified" datetime="2026-02-13T00:01:11+08:00">2026-02-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">展示博客新增的深色模式、阅读时间、目录导航、搜索功能等全面优化，保持原有设计风格的同时提升用户体验。</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><div class="feature-showcase">
+  <header class="showcase-header">
+    <h1>🚀 博客功能全面优化升级</h1>
+    <p class="showcase-subtitle">在保持原有设计风格的基础上，全面提升用户体验和交互效果</p>
+  </header>
+
+  <nav class="showcase-nav">
+    <a href="#dark-mode" class="nav-link">🌙 深色模式</a>
+    <a href="#enhancements" class="nav-link">✨ 功能增强</a>
+    <a href="#performance" class="nav-link">⚡ 性能优化</a>
+    <a href="#compatibility" class="nav-link">🌐 兼容性</a>
+  </nav>
+
+  <section id="dark-mode" class="feature-section">
+    <div class="feature-card">
+      <div class="feature-icon">🌙</div>
+      <div class="feature-content">
+        <h2>深色模式支持</h2>
+        <p>新增智能深色模式，提供舒适的夜间阅读体验，同时保持博客原有的视觉风格。</p>
+        
+<pre><code>    &lt;div class=&quot;feature-list&quot;&gt;
+      &lt;div class=&quot;feature-item&quot;&gt;
+        &lt;span class=&quot;check-icon&quot;&gt;✓&lt;/span&gt;
+        &lt;span&gt;手动切换按钮，位于右上角&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;feature-item&quot;&gt;
+        &lt;span class=&quot;check-icon&quot;&gt;✓&lt;/span&gt;
+        &lt;span&gt;智能记忆用户偏好设置&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;feature-item&quot;&gt;
+        &lt;span class=&quot;check-icon&quot;&gt;✓&lt;/span&gt;
+        &lt;span&gt;平滑的颜色过渡动画&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;feature-item&quot;&gt;
+        &lt;span class=&quot;check-icon&quot;&gt;✓&lt;/span&gt;
+        &lt;span&gt;保持原有配色方案&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    
+    &lt;div class=&quot;demo-section&quot;&gt;
+      &lt;h4&gt;🎯 使用方法&lt;/h4&gt;
+      &lt;p&gt;点击页面右上角的 &lt;strong&gt;🌙/☀️&lt;/strong&gt; 图标即可切换模式&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </section>
+
+  <section id="enhancements" class="feature-section">
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">⏱️</div>
+        <h3>智能阅读时间</h3>
+        <p>自动计算文章预计阅读时间，帮助用户合理安排阅读计划。</p>
+        <div class="tech-badge">JavaScript</div>
+      </div>
+      
+<pre><code>  &lt;div class=&quot;feature-card&quot;&gt;
+    &lt;div class=&quot;feature-icon&quot;&gt;📋&lt;/div&gt;
+    &lt;h3&gt;自动目录生成&lt;/h3&gt;
+    &lt;p&gt;长文章自动生成导航目录，支持平滑滚动定位。&lt;/p&gt;
+    &lt;div class=&quot;tech-badge&quot;&gt;DOM API&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;feature-card&quot;&gt;
+    &lt;div class=&quot;feature-icon&quot;&gt;🎨&lt;/div&gt;
+    &lt;h3&gt;微交互动画&lt;/h3&gt;
+    &lt;p&gt;链接悬停、按钮效果、卡片动画等细节优化。&lt;/p&gt;
+    &lt;div class=&quot;tech-badge&quot;&gt;CSS3&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class=&quot;feature-card&quot;&gt;
+    &lt;div class=&quot;feature-icon&quot;&gt;🔍&lt;/div&gt;
+    &lt;h3&gt;本地搜索功能&lt;/h3&gt;
+    &lt;p&gt;实时搜索文章标题和内容，支持关键词高亮。&lt;/p&gt;
+    &lt;div class=&quot;tech-badge&quot;&gt;Client-side&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </section>
+
+  <section id="performance" class="feature-section">
+    <div class="feature-card">
+      <div class="feature-icon">⚡</div>
+      <div class="feature-content">
+        <h2>性能与SEO优化</h2>
+        <p>全方位提升网站加载速度和搜索引擎优化效果。</p>
+        
+<pre><code>    &lt;div class=&quot;performance-grid&quot;&gt;
+      &lt;div class=&quot;perf-item&quot;&gt;
+        &lt;h4&gt;🖼️ 图片优化&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;懒加载技术，提升首屏加载速度&lt;/li&gt;
+          &lt;li&gt;现代图片格式支持&lt;/li&gt;
+          &lt;li&gt;响应式图片处理&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;perf-item&quot;&gt;
+        &lt;h4&gt;⚡ 加载优化&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;JavaScript异步加载&lt;/li&gt;
+          &lt;li&gt;CSS文件压缩合并&lt;/li&gt;
+          &lt;li&gt;字体加载优化&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;perf-item&quot;&gt;
+        &lt;h4&gt;🔍 SEO增强&lt;/h4&gt;
+        &lt;ul&gt;
+          &lt;li&gt;语义化HTML结构&lt;/li&gt;
+          &lt;li&gt;元标签优化&lt;/li&gt;
+          &lt;li&gt;结构化数据标记&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </section>
+
+  <section id="compatibility" class="feature-section">
+    <div class="feature-card">
+      <div class="feature-icon">🌐</div>
+      <div class="feature-content">
+        <h2>跨平台兼容性</h2>
+        <p>确保在各种浏览器和设备上都能完美运行。</p>
+        
+<pre><code>    &lt;div class=&quot;compatibility-table&quot;&gt;
+      &lt;div class=&quot;browser-support&quot;&gt;
+        &lt;h4&gt;浏览器支持&lt;/h4&gt;
+        &lt;div class=&quot;support-grid&quot;&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;browser-name&quot;&gt;Chrome&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完全支持&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;browser-name&quot;&gt;Firefox&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完全支持&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;browser-name&quot;&gt;Safari&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完全支持&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;browser-name&quot;&gt;Edge&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完全支持&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;device-support&quot;&gt;
+        &lt;h4&gt;设备适配&lt;/h4&gt;
+        &lt;div class=&quot;support-grid&quot;&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;device-name&quot;&gt;桌面端&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完整功能&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;device-name&quot;&gt;平板端&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完整功能&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div class=&quot;support-item&quot;&gt;
+            &lt;span class=&quot;device-name&quot;&gt;手机端&lt;/span&gt;
+            &lt;span class=&quot;support-level&quot;&gt;完整功能&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </section>
+
+  <section class="feature-section">
+    <div class="feature-card">
+      <div class="feature-icon">🎨</div>
+      <div class="feature-content">
+        <h2>设计理念与承诺</h2>
+        <p>在添加新功能的同时，我们始终坚持以下原则：</p>
+        
+<pre><code>    &lt;div class=&quot;principles&quot;&gt;
+      &lt;div class=&quot;principle-item&quot;&gt;
+        &lt;h3&gt;🔄 保持兼容性&lt;/h3&gt;
+        &lt;p&gt;所有新功能都确保与原有设计风格完美融合，不破坏任何现有效果。&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;principle-item&quot;&gt;
+        &lt;h3&gt;⚡ 性能优先&lt;/h3&gt;
+        &lt;p&gt;优化代码执行效率，确保快速响应和流畅体验。&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;principle-item&quot;&gt;
+        &lt;h3&gt;📱 移动友好&lt;/h3&gt;
+        &lt;p&gt;响应式设计确保在各种屏幕尺寸下都有良好体验。&lt;/p&gt;
+      &lt;/div&gt;
+      
+      &lt;div class=&quot;principle-item&quot;&gt;
+        &lt;h3&gt;🔧 易于维护&lt;/h3&gt;
+        &lt;p&gt;模块化代码结构，便于后续功能扩展和维护。&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+  </section>
+
+  <footer class="showcase-footer">
+    <div class="footer-content">
+      <p>✨ 所有功能都已集成到博客中，欢迎在浏览过程中体验！</p>
+      <div class="footer-links">
+        <a href="/archives/" class="footer-link">📚 浏览所有文章</a>
+        <a href="/about/" class="footer-link">👤 关于博主</a>
+        <a href="/" class="footer-link">🏠 返回首页</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<style>
+/* 功能展示页面专用样式 */
+.feature-showcase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.showcase-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.showcase-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.showcase-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.showcase-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--bg-color);
+  border: 2px solid var(--border-color);
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.nav-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-color: #ff7600;
+}
+
+.feature-section {
+  margin-bottom: 60px;
+}
+
+.feature-card {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.feature-content h2 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+}
+
+.feature-content h3 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.feature-list {
+  margin: 20px 0;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 8px;
+  background: var(--code-bg);
+  border-radius: 8px;
+}
+
+.check-icon {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 1.1rem;
+}
+
+.demo-section {
+  margin-top: 25px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: white;
+  border-radius: 10px;
+}
+
+.demo-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature-grid .feature-card {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-grid .feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #ff7600, #f5576c, #ff7600);
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.tech-badge {
+  display: inline-block;
+  background: #ff7600;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.performance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.perf-item h4 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.perf-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.perf-item li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+}
+
+.perf-item li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: #ff7600;
+  font-weight: bold;
+}
+
+.compatibility-table {
+  margin-top: 30px;
+}
+
+.browser-support, .device-support {
+  margin-bottom: 30px;
+}
+
+.support-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.support-item {
+  text-align: center;
+  padding: 15px;
+  background: var(--code-bg);
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.browser-name, .device-name {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--text-color);
+}
+
+.support-level {
+  display: block;
+  padding: 4px 8px;
+  background: #4CAF50;
+  color: white;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.principle-item {
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+.principle-item h3 {
+  color: var(--text-color);
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.principle-item p {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.showcase-footer {
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 20px;
+  background: var(--code-bg);
+  border-radius: 15px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-link {
+  padding: 10px 20px;
+  background: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 20px;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  background: #ff7600;
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .feature-showcase {
+    padding: 15px;
+  }
+  
+  .showcase-header h1 {
+    font-size: 2rem;
+  }
+  
+  .showcase-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .performance-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .support-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  
+  .principles {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .feature-card {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase-header {
+    padding: 20px 15px;
+  }
+  
+  .showcase-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card {
+    padding: 15px;
+  }
+  
+  .support-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8A%9F%E8%83%BD%E4%BC%98%E5%8C%96/" rel="tag"># 功能优化</a>
+              <a href="/tags/%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/" rel="tag"># 用户体验</a>
+              <a href="/tags/%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1/" rel="tag"># 响应式设计</a>
+              <a href="/tags/SEO%E4%BC%98%E5%8C%96/" rel="tag"># SEO优化</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2019/04/30/%E5%A6%82%E4%BD%95%E6%90%AD%E5%BB%BA%E6%94%AF%E6%8C%81HTTPS%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" rel="prev" title="如何搭建支持HTTPS的个人博客">
+                  <i class="fa fa-angle-left"></i> 如何搭建支持HTTPS的个人博客
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2026/02/12/hello-world/" rel="next" title="Hello World">
+                  Hello World <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">FeXlanS</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
