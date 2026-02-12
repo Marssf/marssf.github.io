@@ -1,0 +1,230 @@
+# NexT Configuration
+# Docs: https://theme-next.js.org/docs/getting-started/configuration
+
+# ---------------------------------------------------------------
+# Scheme Settings
+# ---------------------------------------------------------------
+
+# Schemes
+# scheme: Muse
+# scheme: Mist
+scheme: Mist
+# scheme: Pisces
+# scheme: Gemini
+
+# ---------------------------------------------------------------
+# Menu Settings
+# ---------------------------------------------------------------
+
+# Usage: `Key: /link/ || icon`
+# Key is the name of menu item. If the translation for this item is available, the translated text will be displayed. Otherwise, the Key name will be used.
+# Value before `||` delimiter is the target link.
+# Value after `||` delimiter is the name of FontAwesome icon.
+# External url should start with http:// or https://
+menu:
+  home: / || home
+  archives: /archives/ || archive
+  categories: /categories/ || th
+  tags: /tags/ || tags
+  about: /about/ || user
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+# ---------------------------------------------------------------
+# Sidebar Settings
+# ---------------------------------------------------------------
+
+# Sidebar Position
+sidebar:
+  # Sidebar Position. Value: left | right
+  position: left
+  # Enable sidebar in post page.
+  display: post
+  # Sidebar offset from top menubar in pixels.
+  offset: 12
+  # Back to top in sidebar.
+  b2t: false
+  # Scroll to bottom in sidebar.
+  scrollbar: false
+
+# ---------------------------------------------------------------
+# Misc Settings
+# ---------------------------------------------------------------
+
+# Enable smooth scrolling.
+enable: true
+
+# ---------------------------------------------------------------
+# Favicon Settings
+# ---------------------------------------------------------------
+favicon:
+  small: /images/favicon-16x16.png
+  medium: /images/favicon-32x32.png
+  apple_touch_icon: /images/apple-touch-icon.png
+  safari_pinned_tab: /images/logo.svg
+  android_manifest: /images/manifest.json
+  ms_browserconfig: /images/browserconfig.xml
+
+# ---------------------------------------------------------------
+# Theme Enhancement
+# ---------------------------------------------------------------
+
+# FancyBox for image gallery
+fancybox: true
+
+# Lazyload images on posts.
+lazyload: true
+
+# Enable fastclick.
+# For more information: https://github.com/ftlabs/fastclick
+fastclick: true
+
+# Enable Pjax
+# For more information: https://github.com/MoOx/pjax
+pjax: false
+
+# Enable JavaScript compression.
+compress: true
+
+# ---------------------------------------------------------------
+# Custom File Paths
+# ---------------------------------------------------------------
+
+# Custom styles.
+# custom_file_path:
+  # Style file path. Append your custom styles to this file.
+  # style: source/_data/styles.styl
+
+# ---------------------------------------------------------------
+# Advanced Settings
+# ---------------------------------------------------------------
+
+# Set a default language for the site. This will override language from Hexo's _config.yml.
+# language:
+
+# Set a default code language for the site. This will override language from Hexo's _config.yml.
+# code:
+
+# Set a default highlight theme for the site. This will override theme from Hexo's _config.yml.
+# highlight:
+
+# Set a default prism theme for the site. This will override theme from Hexo's _config.yml.
+# prism:
+
+# Set a default rss feed path for the site. This will override feed path from Hexo's _config.yml.
+# feed:
+
+# Set a default sitemap path for the site. This will override sitemap path from Hexo's _config.yml.
+# sitemap:
+
+# Set a default search path for the site. This will override search path from Hexo's _config.yml.
+# search:
+
+# Set a default seo path for the site. This will override seo path from Hexo's _config.yml.
+# seo:
+
+# Set a default external link icon for the site. This will override external link icon from Hexo's _config.yml.
+# extlink:
+
+# Set a default mathjax path for the site. This will override mathjax path from Hexo's _config.yml.
+# mathjax:
+
+# Set a default mermaid path for the site. This will override mermaid path from Hexo's _config.yml.
+# mermaid:
+
+# Set a default graphviz path for the site. This will override graphviz path from Hexo's _config.yml.
+# graphviz:
+
+# Set a default swiftype path for the site. This will override swiftype path from Hexo's _config.yml.
+# swiftype:
+
+# Set a default algolia path for the site. This will override algolia path from Hexo's _config.yml.
+# algolia:
+
+# Set a default local search path for the site. This will override local search path from Hexo's _config.yml.
+# local_search:
+
+# Set a default utterances path for the site. This will override utterances path from Hexo's _config.yml.
+# utterances:
+
+# Set a default giscus path for the site. This will override giscus path from Hexo's _config.yml.
+# giscus:
+
+# Set a default disqus path for the site. This will override disqus path from Hexo's _config.yml.
+# disqus:
+
+# Set a default changyan path for the site. This will override changyan path from Hexo's _config.yml.
+# changyan:
+
+# Set a default livere path for the site. This will override livere path from Hexo's _config.yml.
+# livere:
+
+# Set a default valine path for the site. This will override valine path from Hexo's _config.yml.
+# valine:
+
+# Set a default waline path for the site. This will override waline path from Hexo's _config.yml.
+# waline:
+
+# Set a default gitalk path for the site. This will override gitalk path from Hexo's _config.yml.
+# gitalk:
+
+# Set a default cusdis path for the site. This will override cusdis path from Hexo's _config.yml.
+# cusdis:
+
+# Set a default remark42 path for the site. This will override remark42 path from Hexo's _config.yml.
+# remark42:
+
+# Set a default talkyard path for the site. This will override talkyard path from Hexo's _config.yml.
+# talkyard:
+
+# Set a default hypercomments path for the site. This will override hypercomments path from Hexo's _config.yml.
+# hypercomments:
+
+# Set a default isso path for the site. This will override isso path from Hexo's _config.yml.
+# isso:
+
+# Set a default commento path for the site. This will override commento path from Hexo's _config.yml.
+# commento:
+
+# Set a default utterances path for the site. This will override utterances path from Hexo's _config.yml.
+# utterances:
+
+# Set a default giscus path for the site. This will override giscus path from Hexo's _config.yml.
+# giscus:
+
+# Set a default disqus path for the site. This will override disqus path from Hexo's _config.yml.
+# disqus:
+
+# Set a default changyan path for the site. This will override changyan path from Hexo's _config.yml.
+# changyan:
+
+# Set a default livere path for the site. This will override livere path from Hexo's _config.yml.
+# livere:
+
+# Set a default valine path for the site. This will override valine path from Hexo's _config.yml.
+# valine:
+
+# Set a default waline path for the site. This will override waline path from Hexo's _config.yml.
+# waline:
+
+# Set a default gitalk path for the site. This will override gitalk path from Hexo's _config.yml.
+# gitalk:
+
+# Set a default cusdis path for the site. This will override cusdis path from Hexo's _config.yml.
+# cusdis:
+
+# Set a default remark42 path for the site. This will override remark42 path from Hexo's _config.yml.
+# remark42:
+
+# Set a default talkyard path for the site. This will override talkyard path from Hexo's _config.yml.
+# talkyard:
+
+# Set a default hypercomments path for the site. This will override hypercomments path from Hexo's _config.yml.
+# hypercomments:
+
+# Set a default isso path for the site. This will override isso path from Hexo's _config.yml.
+# isso:
+
+# Set a default commento path for the site. This will override commento path from Hexo's _config.yml.
+# commento:

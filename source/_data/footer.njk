@@ -1,0 +1,47 @@
+<script src="/lib/jquery/index.js"></script>
+<script type="text/javascript" src="/js/wobblewindow.js"></script>
+<script>
+  //只在桌面版网页启用特效
+  if( window.innerWidth > 768  ){
+    $(document).ready(function () {
+      
+        $('#header').wobbleWindow({
+          radius: 50,
+          movementTop: false,
+          movementLeft: false,
+          movementRight: false,
+          debug: false,
+        });
+      
+      });
+  }
+</script>
+
+<script src="/lib/three/three.min.js"></script>
+<script src="/lib/three/src/three-waves.js"></script>
+
+<script src="/js/src/fireworks.js"></script>
+<script async src="/js/src/smallFireworks.js"></script>
+
+<script type="text/javascript" src="/js/src/activate-power-mode.min.js"></script>
+<script>
+  POWERMODE.colorful = true;
+  POWERMODE.shake = false;
+  document.body.addEventListener('input', POWERMODE);
+</script>
+
+<script>
+  var OriginTitile = document.title;
+  var titleTime;
+  document.addEventListener('visibilitychange', function() {
+    if (document.hidden) {
+      document.title = '(つェ⊂)我藏好了哦~' + OriginTitile;
+      clearTimeout(titleTime);
+    } else {
+      document.title = '(*´∇｀*) 被你发现啦~' + OriginTitile;
+      titleTime = setTimeout(function() {
+        document.title = OriginTitile;
+      }, 2000);
+    }
+  });
+</script>
